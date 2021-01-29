@@ -1,0 +1,11 @@
+<p>color-picker works!</p>
+
+<div  #colorInput>
+    <input 
+    [(colorPicker)]="color" 
+    [style.background]="color" 
+    [cpAlphaChannel]="'always'"
+    [cpOutputFormat]="'rgba'"
+    (colorPickerChange)="onColorPickerChange()"
+    (colorPickerOpen)="onColorPickerOpen()"/>
+</div>
